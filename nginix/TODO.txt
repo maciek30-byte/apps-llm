@@ -1,0 +1,8 @@
+Key differences between dev and prod
+Element	Development	Production
+Logs	Disabled/minimal	Full logging
+Cache	Short (e.g. 1h)	Long (30d)
+Timeouts	Shorter (30s)	Standard (60s+)
+Security	Loose headers	Full CSP, HSTS, etc.
+Compression	gzip_comp_level 4	gzip_comp_level 6
+Server tokens	on (easier debugging)	off (hides NGINX version)
