@@ -3,7 +3,7 @@
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "backend/apps/language-trainer-api/src",
   "projectType": "application",
-  "tags": [],
+  "tags": ["scope:backend", "type:app"],
   "targets": {
     "serve": {
       "continuous": true,

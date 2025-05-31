@@ -1,0 +1,8 @@
+{
+  "name": "backend-root",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "backend",
+  "projectType": "library",
+  "tags": ["scope:backend", "type:root"],
+  "targets": {}
+} 

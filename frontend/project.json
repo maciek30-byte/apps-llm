@@ -1,0 +1,8 @@
+{
+  "name": "frontend-root",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "frontend",
+  "projectType": "library",
+  "tags": ["scope:frontend", "type:root"],
+  "targets": {}
+} 

@@ -5,7 +5,7 @@ import NxWelcome from './nx-welcome';
 export function App() {
   return (
     <div>
-      <NxWelcome title="language-trainer-ui" />
+      <h1>Bujaj sie </h1>
     </div>
   );
 }
