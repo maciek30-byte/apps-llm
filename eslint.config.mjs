@@ -20,8 +20,19 @@ export default [
           enforceBuildableLibDependency: true,
           allow: ['^.*/eslint(\\.base)?\\.config\\.[cm]?js$'],
           depConstraints: [
+            // Frontend projects can only depend on other frontend projects
             {
-              sourceTag: '*',
+              sourceTag: 'scope:frontend',
+              onlyDependOnLibsWithTags: ['scope:frontend'],
+            },
+            // Backend projects can only depend on other backend projects  
+            {
+              sourceTag: 'scope:backend',
+              onlyDependOnLibsWithTags: ['scope:backend'],
+            },
+            // Root projects can depend on anything (for shared tooling)
+            {
+              sourceTag: 'type:root',
               onlyDependOnLibsWithTags: ['*'],
             },
           ],
